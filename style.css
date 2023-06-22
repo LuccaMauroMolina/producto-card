@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(252, 242, 232);
+}
+
+img{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 370px;
+}
+
+.centro{
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.circ{
+    border-radius: 50px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    padding-bottom: 15px ;
+    font-size: 25px;
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    background: white ;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 370px;
+}
+
+.claro-1{
+    opacity: 0.4;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.claro-2{
+    opacity: 0.4;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
+
+}
+
+.price{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.price-green{
+    color: rgb(86, 139, 104);
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+}
+
+.price-claro{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+    text-decoration: line-through;
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+    padding: 15px 80px;
+    margin: auto auto 105px;
+    background-color: rgb(86, 139, 104);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    place-items: center;
+}
+
+svg{
+    margin-right: 15px;
+}
+
+
+@media (min-width: 370px) and (max-width:600px){
+    .image{
+        width: 350px;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: none;
+    }
+    .border{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    h1{
+        font-size: x-large;
+        width: fit-content;
+    }
+    .claro-2{
+        font-size: larger;
+        font-size: 19px;
+    }
+    .price{
+
+    }
+    .columna{
+        width: 350px;
+    }
+}
